@@ -11,6 +11,8 @@ import androidx.recyclerview.widget.RecyclerView.Adapter
 import br.com.bernardo.grilldream.R
 import br.com.bernardo.grilldream.model.Lanche
 import com.squareup.picasso.Picasso
+import java.text.NumberFormat
+import java.util.Locale
 
 class LanchesAdapter(
     private val listaLanches: List<Lanche>,
@@ -23,6 +25,7 @@ class LanchesAdapter(
 
         val imgLanche = itemView.findViewById<ImageView>(R.id.img_lanche)
         val txtName = itemView.findViewById<TextView>(R.id.txt_nome_lanche)
+        val txtPrice = itemView.findViewById<TextView>(R.id.txt_price)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LancheViewHolder {
@@ -41,8 +44,13 @@ class LanchesAdapter(
 
     override fun onBindViewHolder(holder: LancheViewHolder, position: Int) {
         val lanche = listaLanches[position]
+        val currencyFormat = NumberFormat
+            .getCurrencyInstance(Locale.getDefault())
+
+        val precoFormatado = currencyFormat.format(lanche.preco)
 
         holder.txtName.text = lanche.name
+        holder.txtPrice.text = "R$${precoFormatado}"
 
         Picasso.get()
             .load(lanche.image)

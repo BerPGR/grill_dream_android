@@ -4,9 +4,8 @@ import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
 
 @Parcelize
-data class Lanche(
-    val name: String,
-    val image: Int,
-    val preco: Double,
-    val infos: InfoLanche
+data class InfoLanche(
+    val tipoPao: String,
+    val tipoCarne: String,
+    val tamanhoCarne: String
 ) : Parcelable

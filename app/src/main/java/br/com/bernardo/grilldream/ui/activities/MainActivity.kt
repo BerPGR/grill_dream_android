@@ -1,8 +1,9 @@
-package br.com.bernardo.grilldream
+package br.com.bernardo.grilldream.ui.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
+import br.com.bernardo.grilldream.R
 import br.com.bernardo.grilldream.databinding.ActivityMainBinding
 import br.com.bernardo.grilldream.ui.fragments.HomeFragment
 import br.com.bernardo.grilldream.ui.fragments.MenuFragment
