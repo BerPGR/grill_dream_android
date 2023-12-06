@@ -3,6 +3,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_margin="10dp"
+    android:id="@+id/card_layout"
     >
 
     <LinearLayout
@@ -18,7 +19,7 @@
             />
 
         <TextView
-            android:id="@+id/txt_nome_lanche"
+            android:id="@+id/txt_name_lanche"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Nome lanche"
