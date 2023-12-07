@@ -3,6 +3,7 @@
     <style name="Base.Theme.GrillDream" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:statusBarColor">@color/brown</item>
     </style>
 
     <style name="Theme.GrillDream" parent="Base.Theme.GrillDream" />

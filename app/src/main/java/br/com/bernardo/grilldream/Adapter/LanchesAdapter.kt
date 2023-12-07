@@ -12,8 +12,7 @@ import androidx.recyclerview.widget.RecyclerView.Adapter
 import br.com.bernardo.grilldream.R
 import br.com.bernardo.grilldream.model.Lanche
 import com.squareup.picasso.Picasso
-import java.text.NumberFormat
-import java.util.Locale
+import java.text.DecimalFormat
 
 class LanchesAdapter(
     private val listaLanches: List<Lanche>,
@@ -31,13 +30,12 @@ class LanchesAdapter(
         val cardView = itemView.findViewById<CardView>(R.id.card_layout)
 
         fun bind(lanche: Lanche) {
-            val currencyFormat = NumberFormat
-                .getCurrencyInstance(Locale.getDefault())
+            val currencyFormat = DecimalFormat("#,##0.00")
 
             val precoFormatado = currencyFormat.format(lanche.price)
 
             txtName.text = lanche.name
-            txtPrice.text = "R${precoFormatado}"
+            txtPrice.text = "R$${precoFormatado}"
 
             Picasso.get()
                 .load(lanche.image)
