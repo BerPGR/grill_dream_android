@@ -8,6 +8,7 @@ data class Lanche(
     val name: String,
     val image: Int,
     val price: Double,
-    val rating: Int,
+    val desc: String,
+    val rating: Float,
     val infos: InfoLanche,
 ) : Parcelable

@@ -37,7 +37,7 @@ class LanchesAdapter(
             val precoFormatado = currencyFormat.format(lanche.price)
 
             txtName.text = lanche.name
-            txtPrice.text = "R$${precoFormatado}"
+            txtPrice.text = "R${precoFormatado}"
 
             Picasso.get()
                 .load(lanche.image)
