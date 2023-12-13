@@ -30,7 +30,7 @@
             <ImageView
                 android:id="@+id/img_lanche"
                 android:layout_width="match_parent"
-                android:layout_height="250dp"
+                android:layout_height="200dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/gourmet_bliss"
                 app:layout_constraintEnd_toEndOf="parent"

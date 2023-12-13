@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import br.com.bernardo.grilldream.Adapter.LanchesAdapter
 import br.com.bernardo.grilldream.R
@@ -43,7 +44,7 @@ class HomeFragment : Fragment() {
 
             startActivity(intent)
         }
-        rvtoplanches.layoutManager = GridLayoutManager(requireContext(), 2)
+        rvtoplanches.layoutManager = LinearLayoutManager(requireContext(), RecyclerView.VERTICAL, false)
 
         return view
     }
@@ -58,10 +59,5 @@ class HomeFragment : Fragment() {
 
             startActivity(intent)
         }
-        /*binding.btnCreate.setOnClickListener {
-            val intent = Intent(activity, CreateHamburguerActivity::class.java)
-
-            startActivity(intent)
-        }*/
     }
 }
