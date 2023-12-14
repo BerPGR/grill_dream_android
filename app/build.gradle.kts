@@ -53,6 +53,8 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.4.0")
     implementation("com.google.android.material:material:1.4.0")
     implementation("com.squareup.picasso:picasso:2.8")
+    implementation("androidx.viewpager2:viewpager2:1.0.0")
+
 
 
 }

@@ -67,7 +67,7 @@ val listaDeLanches = mutableListOf(
                 "e nosso molho especial, servido entre camadas de um pão de " +
                 "hambúrguer leve e dourado.",
         4F,
-        InfoLanche("Pão de batata", "Prime Rib", "160g")
+        InfoLanche("Italiano", "Prime Rib", "160g")
     ),
     Lanche(
         "Savory Summit",
