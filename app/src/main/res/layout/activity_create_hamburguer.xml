@@ -67,11 +67,12 @@
                             android:gravity="center">
 
                             <ImageButton
+                                android:id="@+id/btn_alcatra"
                                 android:layout_width="80dp"
                                 android:layout_height="80dp"
                                 android:src="@drawable/alcatra"
                                 android:scaleType="fitCenter"
-                                android:background="@drawable/rounded_button"/>
+                                android:background="@drawable/rounded_button_disable"/>
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -92,11 +93,12 @@
                             android:gravity="center">
 
                             <ImageButton
+                                android:id="@+id/btn_patinho"
                                 android:layout_width="80dp"
                                 android:layout_height="80dp"
                                 android:src="@drawable/patinho"
                                 android:scaleType="fitCenter"
-                                android:background="@drawable/rounded_button"/>
+                                android:background="@drawable/rounded_button_disable"/>
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -117,11 +119,12 @@
                             android:gravity="center">
 
                             <ImageButton
+                                android:id="@+id/btn_wagyu"
                                 android:layout_width="80dp"
                                 android:layout_height="80dp"
                                 android:src="@drawable/wagyu"
                                 android:scaleType="fitCenter"
-                                android:background="@drawable/rounded_button"/>
+                                android:background="@drawable/rounded_button_disable"/>
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -142,11 +145,12 @@
                             android:gravity="center">
 
                             <ImageButton
+                                android:id="@+id/btn_paleta"
                                 android:layout_width="80dp"
                                 android:layout_height="80dp"
                                 android:src="@drawable/paleta"
                                 android:scaleType="fitCenter"
-                                android:background="@drawable/rounded_button"/>
+                                android:background="@drawable/rounded_button_disable"/>
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -167,11 +171,12 @@
                             android:gravity="center">
 
                             <ImageButton
+                                android:id="@+id/btn_acem"
                                 android:layout_width="80dp"
                                 android:layout_height="80dp"
                                 android:src="@drawable/acem"
                                 android:scaleType="fitCenter"
-                                android:background="@drawable/rounded_button"/>
+                                android:background="@drawable/rounded_button_disable"/>
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -221,11 +226,12 @@
                             android:gravity="center">
 
                             <ImageButton
+                                android:id="@+id/btn_alface"
                                 android:layout_width="80dp"
                                 android:layout_height="80dp"
                                 android:src="@drawable/alface"
                                 android:scaleType="fitCenter"
-                                android:background="@drawable/rounded_button"/>
+                                android:background="@drawable/rounded_button_disable"/>
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -246,11 +252,12 @@
                             android:gravity="center">
 
                             <ImageButton
+                                android:id="@+id/btn_tomate"
                                 android:layout_width="80dp"
                                 android:layout_height="80dp"
                                 android:src="@drawable/tomate"
                                 android:scaleType="fitCenter"
-                                android:background="@drawable/rounded_button"/>
+                                android:background="@drawable/rounded_button_disable"/>
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -271,11 +278,12 @@
                             android:gravity="center">
 
                             <ImageButton
+                                android:id="@+id/btn_queijo"
                                 android:layout_width="80dp"
                                 android:layout_height="80dp"
                                 android:src="@drawable/queijo"
                                 android:scaleType="fitCenter"
-                                android:background="@drawable/rounded_button"/>
+                                android:background="@drawable/rounded_button_disable"/>
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -296,11 +304,12 @@
                             android:gravity="center">
 
                             <ImageButton
+                                android:id="@+id/btn_cebola"
                                 android:layout_width="80dp"
                                 android:layout_height="80dp"
                                 android:src="@drawable/cebola"
                                 android:scaleType="fitCenter"
-                                android:background="@drawable/rounded_button"/>
+                                android:background="@drawable/rounded_button_disable"/>
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -321,11 +330,12 @@
                             android:gravity="center">
 
                             <ImageButton
+                                android:id="@+id/btn_picles"
                                 android:layout_width="80dp"
                                 android:layout_height="80dp"
                                 android:src="@drawable/picles"
                                 android:scaleType="fitCenter"
-                                android:background="@drawable/rounded_button"/>
+                                android:background="@drawable/rounded_button_disable"/>
 
                             <TextView
                                 android:layout_width="wrap_content"
