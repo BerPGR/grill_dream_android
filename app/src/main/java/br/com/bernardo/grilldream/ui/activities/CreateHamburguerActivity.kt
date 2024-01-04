@@ -2,7 +2,9 @@ package br.com.bernardo.grilldream.ui.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.core.content.ContextCompat
+import androidx.viewpager2.widget.ViewPager2
 import br.com.bernardo.grilldream.Adapter.CarousselAdapter
 import br.com.bernardo.grilldream.R
 import br.com.bernardo.grilldream.databinding.ActivityCreateHamburguerBinding
@@ -22,92 +24,39 @@ class CreateHamburguerActivity : AppCompatActivity() {
             finish()
         }
 
-        val viewPager = binding.viewPager
-        viewPager.adapter = CarousselAdapter(listImages)
-
-        binding.btnAcem.setOnClickListener {
-            it.setBackgroundResource(R.drawable.rounded_button_enable)
-            binding.btnAlcatra.setBackgroundResource(R.drawable.rounded_button_disable)
-            binding.btnPatinho.setBackgroundResource(R.drawable.rounded_button_disable)
-            binding.btnWagyu.setBackgroundResource(R.drawable.rounded_button_disable)
-            binding.btnPaleta.setBackgroundResource(R.drawable.rounded_button_disable)
+        binding.rbAcem.setOnCheckedChangeListener { _, isChecked ->
+                binding.rbWagyu.isChecked = false
+                binding.rbAlcatra.isChecked = false
+                binding.rbPatinho.isChecked = false
+                binding.rbPaleta.isChecked = false
         }
 
-        binding.btnAlcatra.setOnClickListener {
-            it.setBackgroundResource(R.drawable.rounded_button_enable)
-            binding.btnAcem.setBackgroundResource(R.drawable.rounded_button_disable)
-            binding.btnPatinho.setBackgroundResource(R.drawable.rounded_button_disable)
-            binding.btnWagyu.setBackgroundResource(R.drawable.rounded_button_disable)
-            binding.btnPaleta.setBackgroundResource(R.drawable.rounded_button_disable)
+        binding.rbWagyu.setOnCheckedChangeListener { _, isChecked ->
+            binding.rbAcem.isChecked = false
+            binding.rbAlcatra.isChecked = false
+            binding.rbPatinho.isChecked = false
+            binding.rbPaleta.isChecked = false
         }
 
-        binding.btnPatinho.setOnClickListener {
-            it.setBackgroundResource(R.drawable.rounded_button_enable)
-            binding.btnAlcatra.setBackgroundResource(R.drawable.rounded_button_disable)
-            binding.btnAcem.setBackgroundResource(R.drawable.rounded_button_disable)
-            binding.btnWagyu.setBackgroundResource(R.drawable.rounded_button_disable)
-            binding.btnPaleta.setBackgroundResource(R.drawable.rounded_button_disable)
+        binding.rbPatinho.setOnCheckedChangeListener { _, isChecked ->
+            binding.rbWagyu.isChecked = false
+            binding.rbAlcatra.isChecked = false
+            binding.rbAcem.isChecked = false
+            binding.rbPaleta.isChecked = false
         }
 
-        binding.btnWagyu.setOnClickListener {
-            it.setBackgroundResource(R.drawable.rounded_button_enable)
-            binding.btnAlcatra.setBackgroundResource(R.drawable.rounded_button_disable)
-            binding.btnPatinho.setBackgroundResource(R.drawable.rounded_button_disable)
-            binding.btnAcem.setBackgroundResource(R.drawable.rounded_button_disable)
-            binding.btnPaleta.setBackgroundResource(R.drawable.rounded_button_disable)
+        binding.rbPaleta.setOnCheckedChangeListener { _, isChecked ->
+            binding.rbWagyu.isChecked = false
+            binding.rbAlcatra.isChecked = false
+            binding.rbPatinho.isChecked = false
+            binding.rbAcem.isChecked = false
         }
 
-        binding.btnPaleta.setOnClickListener {
-            it.setBackgroundResource(R.drawable.rounded_button_enable)
-            binding.btnAlcatra.setBackgroundResource(R.drawable.rounded_button_disable)
-            binding.btnPatinho.setBackgroundResource(R.drawable.rounded_button_disable)
-            binding.btnWagyu.setBackgroundResource(R.drawable.rounded_button_disable)
-            binding.btnAcem.setBackgroundResource(R.drawable.rounded_button_disable)
-        }
-
-        binding.btnAlface.setOnClickListener {
-            if (it.background.constantState == ContextCompat.getDrawable(this, R.drawable.rounded_button_enable)?.constantState) {
-                it.setBackgroundResource(R.drawable.rounded_button_disable)
-            }
-            else {
-                it.setBackgroundResource(R.drawable.rounded_button_enable)
-            }
-        }
-
-        binding.btnTomate.setOnClickListener {
-            if (it.background.constantState == ContextCompat.getDrawable(this, R.drawable.rounded_button_enable)?.constantState) {
-                it.setBackgroundResource(R.drawable.rounded_button_disable)
-            }
-            else {
-                it.setBackgroundResource(R.drawable.rounded_button_enable)
-            }
-        }
-
-        binding.btnQueijo.setOnClickListener {
-            if (it.background.constantState == ContextCompat.getDrawable(this, R.drawable.rounded_button_enable)?.constantState) {
-                it.setBackgroundResource(R.drawable.rounded_button_disable)
-            }
-            else {
-                it.setBackgroundResource(R.drawable.rounded_button_enable)
-            }
-        }
-
-        binding.btnCebola.setOnClickListener {
-            if (it.background.constantState == ContextCompat.getDrawable(this, R.drawable.rounded_button_enable)?.constantState) {
-                it.setBackgroundResource(R.drawable.rounded_button_disable)
-            }
-            else {
-                it.setBackgroundResource(R.drawable.rounded_button_enable)
-            }
-        }
-
-        binding.btnPicles.setOnClickListener {
-            if (it.background.constantState == ContextCompat.getDrawable(this, R.drawable.rounded_button_enable)?.constantState) {
-                it.setBackgroundResource(R.drawable.rounded_button_disable)
-            }
-            else {
-                it.setBackgroundResource(R.drawable.rounded_button_enable)
-            }
+        binding.rbAlcatra.setOnCheckedChangeListener { _, isChecked ->
+            binding.rbWagyu.isChecked = false
+            binding.rbAcem.isChecked = false
+            binding.rbPatinho.isChecked = false
+            binding.rbPaleta.isChecked = false
         }
     }
 }
