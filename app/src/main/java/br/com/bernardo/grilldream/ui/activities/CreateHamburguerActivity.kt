@@ -24,35 +24,35 @@ class CreateHamburguerActivity : AppCompatActivity() {
             finish()
         }
 
-        binding.rbAcem.setOnCheckedChangeListener { _, isChecked ->
+        binding.rbAcem.setOnClickListener {
                 binding.rbWagyu.isChecked = false
                 binding.rbAlcatra.isChecked = false
                 binding.rbPatinho.isChecked = false
                 binding.rbPaleta.isChecked = false
         }
 
-        binding.rbWagyu.setOnCheckedChangeListener { _, isChecked ->
+        binding.rbWagyu.setOnClickListener {
             binding.rbAcem.isChecked = false
             binding.rbAlcatra.isChecked = false
             binding.rbPatinho.isChecked = false
             binding.rbPaleta.isChecked = false
         }
 
-        binding.rbPatinho.setOnCheckedChangeListener { _, isChecked ->
+        binding.rbPatinho.setOnClickListener {
             binding.rbWagyu.isChecked = false
             binding.rbAlcatra.isChecked = false
             binding.rbAcem.isChecked = false
             binding.rbPaleta.isChecked = false
         }
 
-        binding.rbPaleta.setOnCheckedChangeListener { _, isChecked ->
+        binding.rbPaleta.setOnClickListener {
             binding.rbWagyu.isChecked = false
             binding.rbAlcatra.isChecked = false
             binding.rbPatinho.isChecked = false
             binding.rbAcem.isChecked = false
         }
 
-        binding.rbAlcatra.setOnCheckedChangeListener { _, isChecked ->
+        binding.rbAlcatra.setOnClickListener {
             binding.rbWagyu.isChecked = false
             binding.rbAcem.isChecked = false
             binding.rbPatinho.isChecked = false
